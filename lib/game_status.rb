@@ -39,7 +39,7 @@ end
 def winner(board)
   if draw?(board) == true
     return nil
-  elsif !won?(board) == false
+  elsif won?(board) != false
     won?(board).all? {|token| board[token] == "X"}
     return "X"
   elsif !won?(board) == false
