@@ -30,7 +30,7 @@ end
 def over?(board)
   if !won?(board) == false || draw?(board) == true
     return true
-  else false
+  # else false
   end
 end
 
