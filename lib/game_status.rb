@@ -40,6 +40,6 @@ def winner(board)
   if draw?(board) == true
     return nil
   elsif won?(board) != false
-    return won?(board)[0]
+    return won?(board)
   end
 end  
