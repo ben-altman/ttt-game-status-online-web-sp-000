@@ -42,5 +42,8 @@ def winner(board)
   elsif !won?(board) == false
     won?(board).all? {|token| board[token] == "X"}
     puts "X"
+  elsif !won?(board) == false
+    won?(board).all? {|token| board[token] == "O"}
+    puts "O"  
   end
 end  
