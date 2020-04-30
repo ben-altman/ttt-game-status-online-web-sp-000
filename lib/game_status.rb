@@ -40,7 +40,7 @@ def winner(board)
   if draw?(board) == true
     return nil
   elsif !won?(board) == false
-    won?(board).all? {|token| board(token) == "X"}
+    won?(board).all? {|token| board[token] == "X"}
     puts "X"
   end
 end  
